@@ -16,20 +16,20 @@
   <meta name="author" content="Destiny">
   <meta name="keywords" content="">
   
-    <meta name="description" content="输出浮点数的个位数字使用了c语言的&lt;math.h&gt;函数库利用floor()函数向下取整计算 12345678910111213141516#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main() &amp;#123;    double n, mid_0, mid_1;    int n_last;    scanf(&quot;%lf">
+    <meta name="description" content="#链表链表的基本结构链表的节点插入的尾插法链表结点的交换，交换前两个节点和后两个节点 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言练习记录1">
-<meta property="og:url" content="http://example.com/post/text3-cstudy-1.html">
+<meta property="og:url" content="http://example.com/post/text4-cstudy-1.html">
 <meta property="og:site_name" content="Destiny&#39;s Blog">
-<meta property="og:description" content="输出浮点数的个位数字使用了c语言的&lt;math.h&gt;函数库利用floor()函数向下取整计算 12345678910111213141516#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main() &amp;#123;    double n, mid_0, mid_1;    int n_last;    scanf(&quot;%lf">
+<meta property="og:description" content="#链表链表的基本结构链表的节点插入的尾插法链表结点的交换，交换前两个节点和后两个节点 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/cover/cover-text-3.png">
-<meta property="article:published_time" content="2024-03-18T11:35:48.000Z">
-<meta property="article:modified_time" content="2024-03-18T12:10:42.575Z">
+<meta property="og:image" content="http://example.com/img/cover/cover-vscode.png">
+<meta property="article:published_time" content="2024-04-06T09:24:39.000Z">
+<meta property="article:modified_time" content="2024-04-06T09:28:43.260Z">
 <meta property="article:author" content="Destiny">
 <meta property="article:tag" content="Study">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/cover/cover-text-3.png">
+<meta name="twitter:image" content="http://example.com/img/cover/cover-vscode.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -251,8 +251,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-18 19:35" pubdate>
-          2024年3月18日 晚上
+        <time datetime="2024-04-06 17:24" pubdate>
+          2024年4月6日 下午
         </time>
       </span>
     
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          76 字
+          351 字
         
       </span>
     
@@ -274,7 +274,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -324,9 +324,8 @@
             
               <div class="markdown-body">
                 
-                <h1 id="输出浮点数的个位数字"><a href="#输出浮点数的个位数字" class="headerlink" title="输出浮点数的个位数字"></a>输出浮点数的个位数字</h1><p>使用了c语言的&lt;math.h&gt;函数库<br>利用floor()函数向下取整计算</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;math.h&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">double</span> n, mid_0, mid_1;<br>    <span class="hljs-type">int</span> n_last;<br><br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%lf&quot;</span>,&amp;n);<br>    mid_0 = <span class="hljs-built_in">floor</span>(n/<span class="hljs-number">10</span>);<br>    mid_1 = n - (<span class="hljs-number">10</span>*mid_0);<br><br>    n_last = <span class="hljs-built_in">floor</span>(mid_1);<br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,n_last);<br>   <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-
+                <p>#链表<br>链表的基本结构<br>链表的节点插入的尾插法<br>链表结点的交换，交换前两个节点和后两个节点</p>
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><code class="hljs xl">#include &lt;stdio.h&gt;<br>#include &lt;stdlib.h&gt;<br><br><span class="hljs-comment">//定义节点</span><br>typedef struct node &#123;<br>	int <span class="hljs-keyword">data</span>;<br>	struct node* next;<br>&#125; N;<br><br><span class="hljs-comment">//头指针</span><br>N* add_H() &#123;<br>	N* Head = (N*)malloc(sizeof(N));<br><br>	<span class="hljs-keyword">if</span> (Head == NULL)<br>		return NULL;<br>	H<span class="hljs-function"><span class="hljs-title">ead</span>-&gt;</span>next = Head;<br>	return Head;<br>&#125;<br><br><span class="hljs-comment">//尾插法</span><br>void* add_N(N* Head, int <span class="hljs-keyword">data</span>) &#123;<br>	N* Newnode = (N*)malloc(sizeof(N));<br><br>	<span class="hljs-keyword">if</span> (Newnode == NULL)<br>		return NULL;<br>	N<span class="hljs-function"><span class="hljs-title">ewnode</span>-&gt;</span><span class="hljs-keyword">data</span> = <span class="hljs-keyword">data</span>;<span class="hljs-comment">//节点赋值</span><br>	N<span class="hljs-function"><span class="hljs-title">ewnode</span>-&gt;</span>next = NULL;<br><br>	N* pT = NULL;<br>	<span class="hljs-function"><span class="hljs-title">for</span> (pT = Head; pT-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> != Head; pT = pT-&gt;</span>next);<br><br>	N<span class="hljs-function"><span class="hljs-title">ewnode</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> = pT-&gt;</span>next;<br>	<span class="hljs-function"><span class="hljs-title">pT</span>-&gt;</span>next = Newnode;<br>&#125;<br><br><span class="hljs-comment">//节点交换</span><br>void swap_N(N *Head) &#123;<br>	N* <span class="hljs-function"><span class="hljs-title">p1</span> = Head-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>;//Head-&gt;</span>next是第一个节点 p1是结构体指针<br>	N* <span class="hljs-function"><span class="hljs-title">p2</span> = Head-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span>next;<span class="hljs-comment">//同理</span><br><br>	<span class="hljs-function"><span class="hljs-title">p1</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> = p2-&gt;</span>next;<br>	<span class="hljs-function"><span class="hljs-title">p2</span>-&gt;</span>next = p1;<br>	H<span class="hljs-function"><span class="hljs-title">ead</span>-&gt;</span>next<span class="hljs-comment">/* node1 */</span> = p2;<br><br>	N* pT = NULL; <br>	N* pT1 = NULL; <br>	N* pT2 = NULL;<br><br>	<span class="hljs-function"><span class="hljs-title">for</span> (pT = Head; pT-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> != Head; pT = pT-&gt;</span>next); <span class="hljs-comment">//寻找节点</span><br>	<span class="hljs-function"><span class="hljs-title">for</span> (pT1 = Head; pT1-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> != Head; pT1 = pT1-&gt;</span>next);<br>	<span class="hljs-function"><span class="hljs-title">for</span> (pT2 = Head; pT2-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> != Head; pT2 = pT2-&gt;</span>next);<br>	<br>	<span class="hljs-comment">//节点交换</span><br>	<span class="hljs-function"><span class="hljs-title">pT1</span>-&gt;</span>next = Head; <br>	<span class="hljs-function"><span class="hljs-title">pT2</span>-&gt;</span>next = pT1; <br>	<span class="hljs-function"><span class="hljs-title">pT</span>-&gt;</span>next = pT2;<br><br>&#125;<br><br><span class="hljs-comment">//输出函数</span><br>void output(N* Head) &#123;<br>	<span class="hljs-function"><span class="hljs-title">if</span> (Head-&gt;</span>next == Head)<br>		return;<br>	N* <span class="hljs-function"><span class="hljs-title">pT</span> = Head-&gt;</span>next;<br><br>	<span class="hljs-keyword">while</span> (pT != Head) &#123;<br>		<span class="hljs-function"><span class="hljs-title">printf</span>(&quot;%d&quot;, pT-&gt;</span><span class="hljs-keyword">data</span>);<br>		printf(<span class="hljs-string">&quot; &quot;</span>);<br>		<span class="hljs-function"><span class="hljs-title">pT</span> = pT-&gt;</span>next;<br>	&#125;<br>&#125;<br><br>int main() &#123;<br>	N* Head = add_H();<br>	int i, j, n;<br><br>	scanf(<span class="hljs-string">&quot;%d&quot;</span>, &amp;n);<br>	int a[<span class="hljs-number">1000</span>];<br><br>	<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>		scanf(<span class="hljs-string">&quot;%d&quot;</span>, &amp;a[i]);<br>		getchar();<br>	&#125;<br><br>	<span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; n; j++) &#123;<br>		add_N(Head, a[j]);<br>	&#125;<br>	swap_N(Head);<br>	output(Head);<br>	return <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -372,7 +371,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>C语言练习记录1</div>
-      <div>http://example.com/post/text3-cstudy-1.html</div>
+      <div>http://example.com/post/text4-cstudy-1.html</div>
     </div>
     <div class="license-meta">
       
@@ -384,7 +383,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年3月18日</div>
+          <div>2024年4月6日</div>
         </div>
       
       
@@ -420,8 +419,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/post/text2-lantern.html" title="手机摄像头拍摄灯笼偏色">
-                        <span class="hidden-mobile">手机摄像头拍摄灯笼偏色</span>
+                      <a href="/post/text3-cstudy-0.html" title="C语言练习记录1">
+                        <span class="hidden-mobile">C语言练习记录1</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
