@@ -23,14 +23,14 @@
 <meta property="og:site_name" content="Destiny&#39;s Blog">
 <meta property="og:description" content="链表2 — 单链表尾插法详解目的：实现创建新结点 尾插法图解如下 代码实现如下 123456789101112131415161718192021222324252627282930&#x2F;&#x2F;定义结点typedef struct LinkList&amp;#123;	int d;	struct LinkList *next;&amp;#125; List;&#x2F;&#x2F;尾插法List *add_List(List* Head,">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/cover/cover-vscode.png">
+<meta property="og:image" content="http://example.com/img/text5/text5-0.jpg">
 <meta property="article:published_time" content="2024-04-06T16:12:21.000Z">
-<meta property="article:modified_time" content="2024-04-08T15:45:00.999Z">
+<meta property="article:modified_time" content="2024-04-08T15:49:07.717Z">
 <meta property="article:author" content="Destiny">
 <meta property="article:tag" content="Study">
 <meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/cover/cover-vscode.png">
+<meta name="twitter:image" content="http://example.com/img/text5/text5-0.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -326,7 +326,7 @@
               <div class="markdown-body">
                 
                 <h1 id="链表2-—-单链表尾插法详解"><a href="#链表2-—-单链表尾插法详解" class="headerlink" title="链表2 — 单链表尾插法详解"></a>链表2 — 单链表尾插法详解</h1><p>目的：实现创建新结点</p>
-<p>尾插法图解如下<br><img src="/img/text5/text5-0.jpeg" srcset="/img/loading.gif" lazyload alt="图解"></p>
+<p>尾插法图解如下<br><img src="/img/text5/text5-0.jpg" srcset="/img/loading.gif" lazyload alt="图解"></p>
 <p>代码实现如下</p>
 <figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs haxe"><span class="hljs-comment">//定义结点</span><br><span class="hljs-keyword">typedef</span> struct LinkList&#123;<br>	int d;<br>	struct LinkList *next;<br>&#125; List;<br><br><span class="hljs-comment">//尾插法</span><br>List *add_List(List* Head, int data)&#123;<br>	<br>	List *<span class="hljs-keyword">new</span><span class="hljs-type">node</span> = (List*)malloc(sizeof(List));   <span class="hljs-comment">//创建新结点</span><br>	<br>	<span class="hljs-keyword">new</span><span class="hljs-type">node</span>-&gt;d = data;   <span class="hljs-comment">//结点赋值</span><br>	<span class="hljs-keyword">new</span><span class="hljs-type">node</span>-&gt;next = NULL; <br>	<br>	<br>	<span class="hljs-keyword">if</span>(Head == NULL)<br>	&#123;<br>		Head = <span class="hljs-keyword">new</span><span class="hljs-type">node</span>;<br>	&#125;<span class="hljs-keyword">else</span>&#123;<br>		List *pT = Head;<br>		<span class="hljs-keyword">while</span> (pT-&gt;next != NULL)<br>		&#123;<br>			pT = pT-&gt;next;<br>		&#125;<br>		pT-&gt;next = <span class="hljs-keyword">new</span><span class="hljs-type">node</span>; <br>		<span class="hljs-comment">//注意！！！跳出循环时pT-&gt;next为NULL，此时将newnode新节点接入pT-&gt;next</span><br>		<br>	&#125;<br>	<span class="hljs-keyword">return</span> Head;    <span class="hljs-comment">//返回头结点值</span><br>&#125;<br></code></pre></td></tr></table></figure>
                 
