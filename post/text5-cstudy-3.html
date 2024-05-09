@@ -16,12 +16,12 @@
   <meta name="author" content="Destiny">
   <meta name="keywords" content="">
   
-    <meta name="description" content="链表2 — 单链表尾插法详解目的：实现创建新结点 尾插法图解如下 代码实现如下 123456789101112131415161718192021222324252627282930&#x2F;&#x2F;定义结点typedef struct LinkList&amp;#123;	int d;	struct LinkList *next;&amp;#125; List;&#x2F;&#x2F;尾插法List *add_List(List* Head,">
+    <meta name="description" content="链表2 — 单链表尾插法详解目的：实现创建新结点 尾插法图解如下 代码实现如下 &#x2F;&#x2F;定义结点 typedef struct LinkList&amp;#123; 	int d; 	struct LinkList *next; &amp;#125; List;  &#x2F;&#x2F;尾插法 List *add_List(List* Head, int data)&amp;#123; 	 	List">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言学习记录3 — 链表2">
 <meta property="og:url" content="http://example.com/post/text5-cstudy-3.html">
 <meta property="og:site_name" content="Destiny&#39;s Blog">
-<meta property="og:description" content="链表2 — 单链表尾插法详解目的：实现创建新结点 尾插法图解如下 代码实现如下 123456789101112131415161718192021222324252627282930&#x2F;&#x2F;定义结点typedef struct LinkList&amp;#123;	int d;	struct LinkList *next;&amp;#125; List;&#x2F;&#x2F;尾插法List *add_List(List* Head,">
+<meta property="og:description" content="链表2 — 单链表尾插法详解目的：实现创建新结点 尾插法图解如下 代码实现如下 &#x2F;&#x2F;定义结点 typedef struct LinkList&amp;#123; 	int d; 	struct LinkList *next; &amp;#125; List;  &#x2F;&#x2F;尾插法 List *add_List(List* Head, int data)&amp;#123; 	 	List">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/text/text5/text5.jpg">
 <meta property="article:published_time" content="2024-04-06T16:12:21.000Z">
@@ -45,6 +45,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
@@ -205,6 +207,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" target="_self">
+                <i class="iconfont icon-clipboard-fill"></i>
+                <span>备忘录</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/links/" target="_self">
                 <i class="iconfont icon-link-fill"></i>
                 <span>友链</span>
@@ -264,7 +278,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          135 字
+          156 字
         
       </span>
     
@@ -328,7 +342,36 @@
                 <h1 id="链表2-—-单链表尾插法详解"><a href="#链表2-—-单链表尾插法详解" class="headerlink" title="链表2 — 单链表尾插法详解"></a>链表2 — 单链表尾插法详解</h1><p>目的：实现创建新结点</p>
 <p>尾插法图解如下<br><img src="/img/text/text5/text5.jpg" srcset="/img/loading.gif" lazyload alt="图解"></p>
 <p>代码实现如下</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs haxe"><span class="hljs-comment">//定义结点</span><br><span class="hljs-keyword">typedef</span> struct LinkList&#123;<br>	int d;<br>	struct LinkList *next;<br>&#125; List;<br><br><span class="hljs-comment">//尾插法</span><br>List *add_List(List* Head, int data)&#123;<br>	<br>	List *<span class="hljs-keyword">new</span><span class="hljs-type">node</span> = (List*)malloc(sizeof(List));   <span class="hljs-comment">//创建新结点</span><br>	<br>	<span class="hljs-keyword">new</span><span class="hljs-type">node</span>-&gt;d = data;   <span class="hljs-comment">//结点赋值</span><br>	<span class="hljs-keyword">new</span><span class="hljs-type">node</span>-&gt;next = NULL; <br>	<br>	<br>	<span class="hljs-keyword">if</span>(Head == NULL)<br>	&#123;<br>		Head = <span class="hljs-keyword">new</span><span class="hljs-type">node</span>;<br>	&#125;<span class="hljs-keyword">else</span>&#123;<br>		List *pT = Head;<br>		<span class="hljs-keyword">while</span> (pT-&gt;next != NULL)<br>		&#123;<br>			pT = pT-&gt;next;<br>		&#125;<br>		pT-&gt;next = <span class="hljs-keyword">new</span><span class="hljs-type">node</span>; <br>		<span class="hljs-comment">//注意！！！跳出循环时pT-&gt;next为NULL，此时将newnode新结点接入pT-&gt;next</span><br>		<br>	&#125;<br>	<span class="hljs-keyword">return</span> Head;    <span class="hljs-comment">//返回头结点值</span><br>&#125;<br></code></pre></td></tr></table></figure>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;定义结点
+typedef struct LinkList&#123;
+	int d;
+	struct LinkList *next;
+&#125; List;
+
+&#x2F;&#x2F;尾插法
+List *add_List(List* Head, int data)&#123;
+	
+	List *newnode &#x3D; (List*)malloc(sizeof(List));   &#x2F;&#x2F;创建新结点
+	
+	newnode-&gt;d &#x3D; data;   &#x2F;&#x2F;结点赋值
+	newnode-&gt;next &#x3D; NULL; 
+	
+	
+	if(Head &#x3D;&#x3D; NULL)
+	&#123;
+		Head &#x3D; newnode;
+	&#125;else&#123;
+		List *pT &#x3D; Head;
+		while (pT-&gt;next !&#x3D; NULL)
+		&#123;
+			pT &#x3D; pT-&gt;next;
+		&#125;
+		pT-&gt;next &#x3D; newnode; 
+		&#x2F;&#x2F;注意！！！跳出循环时pT-&gt;next为NULL，此时将newnode新结点接入pT-&gt;next
+		
+	&#125;
+	return Head;    &#x2F;&#x2F;返回头结点值
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
                 
               </div>
             
@@ -688,6 +731,8 @@
   });
 </script>
 
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
