@@ -16,12 +16,12 @@
   <meta name="author" content="Destiny">
   <meta name="keywords" content="">
   
-    <meta name="description" content="链表3 — 单链表结点删除局部代码详解目的：实现单链表数据为x的结点删除 &#x2F;&#x2F;删除结点函数 void del(List *head,int x)&amp;#123;     if (head &#x3D;&#x3D; NULL) &amp;#123;         return;     &amp;#125;      &#x2F;&#x2F;单独判断头结点，如果为x则删除     if (head">
+    <meta name="description" content="链表3 — 单链表结点删除局部代码详解目的：实现单链表数据为x的结点删除 1234567891011121314151617181920212223242526&#x2F;&#x2F;删除结点函数void del(List *head,int x)&amp;#123;    if (head &#x3D;&#x3D; NULL) &amp;#123;        return;    &amp;#125;     &#x2F;&#x2F;单独判断头结点，如果为x则删除    i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C语言学习记录4 — 链表3">
 <meta property="og:url" content="http://example.com/post/text6-cstudy-4.html">
 <meta property="og:site_name" content="Destiny&#39;s Blog">
-<meta property="og:description" content="链表3 — 单链表结点删除局部代码详解目的：实现单链表数据为x的结点删除 &#x2F;&#x2F;删除结点函数 void del(List *head,int x)&amp;#123;     if (head &#x3D;&#x3D; NULL) &amp;#123;         return;     &amp;#125;      &#x2F;&#x2F;单独判断头结点，如果为x则删除     if (head">
+<meta property="og:description" content="链表3 — 单链表结点删除局部代码详解目的：实现单链表数据为x的结点删除 1234567891011121314151617181920212223242526&#x2F;&#x2F;删除结点函数void del(List *head,int x)&amp;#123;    if (head &#x3D;&#x3D; NULL) &amp;#123;        return;    &amp;#125;     &#x2F;&#x2F;单独判断头结点，如果为x则删除    i">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/cover/cover-vscode.png">
 <meta property="article:published_time" content="2024-04-08T13:36:31.000Z">
@@ -45,8 +45,6 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
@@ -208,7 +206,7 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" target="_self">
-                <i class="iconfont icon-clipboard-fill"></i>
+                <i class="iconfont icon-document-fill"></i>
                 <span>备忘录</span>
               </a>
             </li>
@@ -278,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          535 字
+          465 字
         
       </span>
     
@@ -289,7 +287,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -340,115 +338,9 @@
               <div class="markdown-body">
                 
                 <h1 id="链表3-—-单链表结点删除"><a href="#链表3-—-单链表结点删除" class="headerlink" title="链表3 — 单链表结点删除"></a>链表3 — 单链表结点删除</h1><h2 id="局部代码详解"><a href="#局部代码详解" class="headerlink" title="局部代码详解"></a>局部代码详解</h2><p>目的：实现单链表数据为x的结点删除</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;删除结点函数
-void del(List *head,int x)&#123;
-    if (head &#x3D;&#x3D; NULL) &#123;
-        return;
-    &#125;
-     &#x2F;&#x2F;单独判断头结点，如果为x则删除
-    if (head-&gt;d &#x3D;&#x3D; x) &#123;
-        List *temp &#x3D; head;
-        head &#x3D; head-&gt;next;
-        free(temp);    &#x2F;&#x2F;删除结点（释放内存）
-    &#125;
-    &#x2F;&#x2F;定义结构体指针
-    List *p &#x3D; head;
+<figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs xl"><span class="hljs-comment">//删除结点函数</span><br>void del(List *head,int x)&#123;<br>    <span class="hljs-keyword">if</span> (head == NULL) &#123;<br>        return;<br>    &#125;<br>     <span class="hljs-comment">//单独判断头结点，如果为x则删除</span><br>    <span class="hljs-function"><span class="hljs-title">if</span> (head-&gt;</span>d == x) &#123;<br>        List *temp = head;<br>        <span class="hljs-function"><span class="hljs-title">head</span> = head-&gt;</span>next;<br>        free(temp);    <span class="hljs-comment">//删除结点（释放内存）</span><br>    &#125;<br>    <span class="hljs-comment">//定义结构体指针</span><br>    List *p = head;<br><br>    <span class="hljs-comment">//头节点判断结束，顺序判断各结点是否需要删除</span><br>    <span class="hljs-function"><span class="hljs-title">while</span> (p-&gt;</span>next != NULL) &#123;<br>        <span class="hljs-function"><span class="hljs-title">if</span> (p-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span>d == x) &#123;<br>            L<span class="hljs-function"><span class="hljs-title">ist</span> *temp = p-&gt;</span>next;    <span class="hljs-comment">//将需要删除的结点储存在结构体指针temp中</span><br>            <span class="hljs-function"><span class="hljs-title">p</span>-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span> = p-&gt;</span><span class="hljs-function"><span class="hljs-title">next</span>-&gt;</span>next;   <span class="hljs-comment">//将指针移动到下一结点处</span><br>            free(temp);    <span class="hljs-comment">//删除结点（释放内存）</span><br>        &#125;<span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-function"><span class="hljs-title">p</span> = p-&gt;</span>next;    <span class="hljs-comment">//不需要删除时，判断下一结点是否删除</span><br>        &#125;<br>    &#125;<br>    return;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-    &#x2F;&#x2F;头节点判断结束，顺序判断各结点是否需要删除
-    while (p-&gt;next !&#x3D; NULL) &#123;
-        if (p-&gt;next-&gt;d &#x3D;&#x3D; x) &#123;
-            List *temp &#x3D; p-&gt;next;    &#x2F;&#x2F;将需要删除的结点储存在结构体指针temp中
-            p-&gt;next &#x3D; p-&gt;next-&gt;next;   &#x2F;&#x2F;将指针移动到下一结点处
-            free(temp);    &#x2F;&#x2F;删除结点（释放内存）
-        &#125;else &#123;
-            p &#x3D; p-&gt;next;    &#x2F;&#x2F;不需要删除时，判断下一结点是否删除
-        &#125;
-    &#125;
-    return;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
-
-<h2 id="完整代码实现"><a href="#完整代码实现" class="headerlink" title="完整代码实现"></a>完整代码实现</h2><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-
-&#x2F;&#x2F;定义结点
-typedef struct LinkList&#123;
-    int d;
-    struct LinkList *next;
-&#125; List;
-
-&#x2F;&#x2F;尾插法
-List *add_list(List *head, int data)&#123;
-    List *newnode &#x3D; (List *)malloc(sizeof(List));
-
-    newnode-&gt;d &#x3D; data;
-    newnode-&gt;next &#x3D; NULL;
-
-    if (head &#x3D;&#x3D;NULL) &#123;
-        head &#x3D; newnode;
-    &#125;else &#123;
-        List *pT &#x3D; head;
-        while (pT-&gt;next !&#x3D; NULL) &#123;
-            pT &#x3D; pT-&gt;next;
-        &#125;
-        pT-&gt;next &#x3D; newnode;
-    &#125;
-    return head;
-&#125;
-
-&#x2F;&#x2F;输出函数
-void output(List *head)&#123;
-    List *pT &#x3D; head;
-    while (pT !&#x3D; NULL) &#123;
-        printf(&quot;%d&quot;,pT-&gt;d);
-        printf(&quot; &quot;);
-        pT &#x3D; pT-&gt;next;
-    &#125;
-&#125;
-
-&#x2F;&#x2F;删除结点函数
-void del(List *head,int x)&#123;
-    if (head &#x3D;&#x3D; NULL) &#123;
-        return;
-    &#125;
-
-    if (head-&gt;d &#x3D;&#x3D; x) &#123;
-        List *temp &#x3D; head;
-        head &#x3D; head-&gt;next;
-        free(temp);
-    &#125;
-   
-    List *p &#x3D; head;
-    while (p-&gt;next !&#x3D; NULL) &#123;
-        if (p-&gt;next-&gt;d &#x3D;&#x3D; x) &#123;
-            List *temp &#x3D; p-&gt;next;
-            p-&gt;next &#x3D; p-&gt;next-&gt;next;
-            free(temp);
-        &#125;else &#123;
-            p &#x3D; p-&gt;next;
-        &#125;
-    &#125;
-    return;
-&#125;
-
-int main() &#123;
-    int n,i,x;
-    List *head &#x3D; NULL;
-    scanf(&quot;%d&quot;,&amp;n);
-    getchar();
-    scanf(&quot;%d&quot;,&amp;x);
-    int a[n];
-
-    for (i&#x3D;0; i &lt; n; i++) &#123;
-        scanf(&quot;%d&quot;,&amp;a[i]);
-        getchar();
-    &#125;
-    for (i&#x3D;0; i &lt; n; i++) &#123;
-        head &#x3D; add_list(head, a[i]);
-    &#125;
-    del(head,x);   &#x2F;&#x2F;调用删除结点函数
-    output(head);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<h2 id="完整代码实现"><a href="#完整代码实现" class="headerlink" title="完整代码实现"></a>完整代码实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdlib.h&gt;</span></span><br><br><span class="hljs-comment">//定义结点</span><br><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">LinkList</span>&#123;<br>    <span class="hljs-type">int</span> d;<br>    <span class="hljs-keyword">struct</span> <span class="hljs-title class_">LinkList</span> *next;<br>&#125; List;<br><br><span class="hljs-comment">//尾插法</span><br><span class="hljs-function">List *<span class="hljs-title">add_list</span><span class="hljs-params">(List *head, <span class="hljs-type">int</span> data)</span></span>&#123;<br>    List *newnode = (List *)<span class="hljs-built_in">malloc</span>(<span class="hljs-built_in">sizeof</span>(List));<br><br>    newnode-&gt;d = data;<br>    newnode-&gt;next = <span class="hljs-literal">NULL</span>;<br><br>    <span class="hljs-keyword">if</span> (head ==<span class="hljs-literal">NULL</span>) &#123;<br>        head = newnode;<br>    &#125;<span class="hljs-keyword">else</span> &#123;<br>        List *pT = head;<br>        <span class="hljs-keyword">while</span> (pT-&gt;next != <span class="hljs-literal">NULL</span>) &#123;<br>            pT = pT-&gt;next;<br>        &#125;<br>        pT-&gt;next = newnode;<br>    &#125;<br>    <span class="hljs-keyword">return</span> head;<br>&#125;<br><br><span class="hljs-comment">//输出函数</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">output</span><span class="hljs-params">(List *head)</span></span>&#123;<br>    List *pT = head;<br>    <span class="hljs-keyword">while</span> (pT != <span class="hljs-literal">NULL</span>) &#123;<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>,pT-&gt;d);<br>        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot; &quot;</span>);<br>        pT = pT-&gt;next;<br>    &#125;<br>&#125;<br><br><span class="hljs-comment">//删除结点函数</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">del</span><span class="hljs-params">(List *head,<span class="hljs-type">int</span> x)</span></span>&#123;<br>    <span class="hljs-keyword">if</span> (head == <span class="hljs-literal">NULL</span>) &#123;<br>        <span class="hljs-keyword">return</span>;<br>    &#125;<br><br>    <span class="hljs-keyword">if</span> (head-&gt;d == x) &#123;<br>        List *temp = head;<br>        head = head-&gt;next;<br>        <span class="hljs-built_in">free</span>(temp);<br>    &#125;<br>   <br>    List *p = head;<br>    <span class="hljs-keyword">while</span> (p-&gt;next != <span class="hljs-literal">NULL</span>) &#123;<br>        <span class="hljs-keyword">if</span> (p-&gt;next-&gt;d == x) &#123;<br>            List *temp = p-&gt;next;<br>            p-&gt;next = p-&gt;next-&gt;next;<br>            <span class="hljs-built_in">free</span>(temp);<br>        &#125;<span class="hljs-keyword">else</span> &#123;<br>            p = p-&gt;next;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span>;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> n,i,x;<br>    List *head = <span class="hljs-literal">NULL</span>;<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;n);<br>    <span class="hljs-built_in">getchar</span>();<br>    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;x);<br>    <span class="hljs-type">int</span> a[n];<br><br>    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,&amp;a[i]);<br>        <span class="hljs-built_in">getchar</span>();<br>    &#125;<br>    <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>        head = <span class="hljs-built_in">add_list</span>(head, a[i]);<br>    &#125;<br>    <span class="hljs-built_in">del</span>(head,x);   <span class="hljs-comment">//调用删除结点函数</span><br>    <span class="hljs-built_in">output</span>(head);<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -808,8 +700,6 @@ int main() &#123;
   });
 </script>
 
-
-  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
