@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>text13-project-3</title>
+    <link href="/post/text13-project-3.html"/>
+    <url>/post/text13-project-3.html</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>使用Visual Studio 2022进行项目发行/打包</title>
     <link href="/post/text12-project-2.html"/>
     <url>/post/text12-project-2.html</url>
     
-    <content type="html"><![CDATA[<h1 id="使用Visual-Studio-2022进行项目发行-打包"><a href="#使用Visual-Studio-2022进行项目发行-打包" class="headerlink" title="使用Visual Studio 2022进行项目发行&#x2F;打包"></a>使用Visual Studio 2022进行项目发行&#x2F;打包</h1><p>亟待完善</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="使用Visual-Studio-2022进行项目发行-打包"><a href="#使用Visual-Studio-2022进行项目发行-打包" class="headerlink" title="使用Visual Studio 2022进行项目发行&#x2F;打包"></a>使用Visual Studio 2022进行项目发行&#x2F;打包</h1><h2 id="1-安装扩展"><a href="#1-安装扩展" class="headerlink" title="1.安装扩展"></a>1.安装扩展</h2><p>安装扩展Microsoft Visual Studio Installer Projects 2022</p><h2 id="2-制作安装包"><a href="#2-制作安装包" class="headerlink" title="2.制作安装包"></a>2.制作安装包</h2><p>2.1 右键要打包的项目的解决方案-&gt;添加-&gt;新建项目-&gt;选择setup Project。<br><img src="/img/text/text12/1.png" alt="这是第1张图片QwQ"><br><img src="/img/text/text12/2.png" alt="这是第2张图片QwQ"><br>2.2 为项目命名<br><img src="/img/text/text12/3.png" alt="这是第3张图片QwQ"><br>2.3  右键要打包的项目-&gt;在文件资源管理器中打开文件夹。<br><img src="/img/text/text12/4.png" alt="这是第4张图片QwQ"><br>2.4 复制打开的文件夹中的所有文件和文件夹并粘贴到Application Folder中。<br><img src="/img/text/text12/5.png" alt="这是第5张图片QwQ"><br><img src="/img/text/text12/6.png" alt="这是第6张图片QwQ"></p><h3 id="文件夹功能说明"><a href="#文件夹功能说明" class="headerlink" title="文件夹功能说明"></a>文件夹功能说明</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">Application Folder：应用程序包含的文件设置。<br>Use<span class="hljs-string">r&#x27;s Desktop：用户桌面快捷方式设置。</span><br><span class="hljs-string">User&#x27;</span>s Programs Menu：用户启动菜单的快捷方式设置。<br></code></pre></td></tr></table></figure><p>2.5 设置项目主输出<br>选择Application Folder-&gt;点击add-&gt;项目输出-&gt;设置为主输出-&gt;确定（系统会自动生成主输出文件）。<br><img src="/img/text/text12/7.png" alt="这是第7张图片QwQ"><br><img src="/img/text/text12/8.png" alt="这是第8张图片QwQ"><br>2.6 设置快捷方式<br>右击新生成的主输出文件-&gt;Create Shortcut to主输出from test (Active)依赖项(E)-&gt;将其重命名-&gt;拖至User&#96;s Desktop文件夹<br><img src="/img/text/text12/9.png" alt="这是第9张图片QwQ"><br><img src="/img/text/text12/10.png" alt="这是第10张图片QwQ"><br>2.7 右击快捷方式文件-&gt;属性窗口-&gt;设置图标（icon）属性-&gt;点击Icon，选择Browse-&gt;点击Browse-&gt;双击Application Folder-&gt;点击Add File-&gt;选择.ico图标文件<br><img src="/img/text/text12/11.png" alt="这是第11张图片QwQ"><br><img src="/img/text/text12/12.png" alt="这是第12张图片QwQ"><br><img src="/img/text/text12/13.png" alt="这是第13张图片QwQ"><br><img src="/img/text/text12/14.png" alt="这是第14张图片QwQ"><br>2.8 右键setup Project项目，选择生成即可，生成成功或失败会有提示<br><img src="/img/text/text12/15.png" alt="这是第15张图片QwQ"><br>2.8 发行的exe&#x2F;msi安装程序储存在目标发行项目一期的同一目录下<br><img src="/img/text/text12/16.png" alt="这是第16张图片QwQ"><br><img src="/img/text/text12/17.png" alt="这是第17张图片QwQ"><br><img src="/img/text/text12/18.png" alt="这是第18张图片QwQ"></p>]]></content>
     
     
     <categories>
@@ -22,9 +35,9 @@
       
       <tag>Study</tag>
       
-      <tag>备忘录</tag>
-      
       <tag>项目开发</tag>
+      
+      <tag>备忘录</tag>
       
     </tags>
     
@@ -51,9 +64,9 @@
       
       <tag>Study</tag>
       
-      <tag>Linux操作系统</tag>
-      
       <tag>备忘录</tag>
+      
+      <tag>Linux操作系统</tag>
       
     </tags>
     
@@ -80,9 +93,9 @@
       
       <tag>Study</tag>
       
-      <tag>Linux操作系统</tag>
-      
       <tag>备忘录</tag>
+      
+      <tag>Linux操作系统</tag>
       
     </tags>
     
@@ -335,22 +348,22 @@
   
   
   <entry>
-    <title>我们建议您作出友好的评论</title>
+    <title>about</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<p><center> <big><b>您的评论务必遵守如下及中国或您所在国家的一切相关法律法规：</b></big></center><center><big><b>《中华人民共和国网络安全法》</b></big></center><center><big><b>《网络信息内容生态治理规定》</b></big></center><center><big><b>《互联网跟帖评论服务管理规定》</b></big></center></p><p><center>善语结善缘 恶语伤人心</center><center>本站鼓励用户表达个人观点的同时尊重他人观点，不引战、人身攻击、不诋毁、辱骂他人。</center><center>本站鼓励大家基于真实的信息表达观点，杜绝抄袭捏造，不造谣传谣，不有意误导和歪曲事实。</center><center>本站鼓励用户避免制造分裂和对立，交朋友而不是制造敌人。</center></p><p><center>感谢您的配合</center></p>]]></content>
+    <content type="html"><![CDATA[<p><center>Destiny是一名喜欢二次元、数码、各类游戏和VOCALOID的脆皮大学生，目前就读于<a href="https://www.lnu.edu.cn/">辽宁大学</a>计算机类专业。</center><center><b>正在努力学习和苦练技术<del>（摆烂）</del>。</b></center></p></p><center>本人会在此网站上面记录自己的技术文档和学习生活日常，也可能会搬运一些本人发在酷安或其他平台的文章。</center></p><p><center>邮箱：1564932340@qq.com</center><center>酷安：四氯合铜离子</center></p><p><center><a href="https://destiny-blog.cn/comment-policy/">查看我们对您在本站发表评论做出的建议及要求</a></center></p><p><center>由于本站点使用Github托管，部分页面加载速度可能较为缓慢。</center><center>本站基于  Hexo  搭建</center><center>主题：Fluid</center></p>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>about</title>
+    <title>我们建议您作出友好的评论</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<p><center>Destiny是一名喜欢二次元、数码、各类游戏和VOCALOID的脆皮大学生，目前就读于<a href="https://www.lnu.edu.cn/">辽宁大学</a>计算机类专业。</center><center><b>正在努力学习和苦练技术<del>（摆烂）</del>。</b></center></p></p><center>本人会在此网站上面记录自己的技术文档和学习生活日常，也可能会搬运一些本人发在酷安或其他平台的文章。</center></p><p><center>邮箱：1564932340@qq.com</center><center>酷安：四氯合铜离子</center></p><p><center><a href="https://destiny-blog.cn/comment-policy/">查看我们对您在本站发表评论做出的建议及要求</a></center></p><p><center>由于本站点使用Github托管，部分页面加载速度可能较为缓慢。</center><center>本站基于  Hexo  搭建</center><center>主题：Fluid</center></p>]]></content>
+    <content type="html"><![CDATA[<p><center> <big><b>您的评论务必遵守如下及中国或您所在国家的一切相关法律法规：</b></big></center><center><big><b>《中华人民共和国网络安全法》</b></big></center><center><big><b>《网络信息内容生态治理规定》</b></big></center><center><big><b>《互联网跟帖评论服务管理规定》</b></big></center></p><p><center>善语结善缘 恶语伤人心</center><center>本站鼓励用户表达个人观点的同时尊重他人观点，不引战、人身攻击、不诋毁、辱骂他人。</center><center>本站鼓励大家基于真实的信息表达观点，杜绝抄袭捏造，不造谣传谣，不有意误导和歪曲事实。</center><center>本站鼓励用户避免制造分裂和对立，交朋友而不是制造敌人。</center></p><p><center>感谢您的配合</center></p>]]></content>
     
   </entry>
   
