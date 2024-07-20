@@ -22,9 +22,9 @@
       
       <tag>Study</tag>
       
-      <tag>项目开发</tag>
-      
       <tag>备忘录</tag>
+      
+      <tag>项目开发</tag>
       
     </tags>
     
@@ -51,9 +51,9 @@
       
       <tag>Study</tag>
       
-      <tag>备忘录</tag>
-      
       <tag>Linux操作系统</tag>
+      
+      <tag>备忘录</tag>
       
     </tags>
     
@@ -80,9 +80,9 @@
       
       <tag>Study</tag>
       
-      <tag>备忘录</tag>
-      
       <tag>Linux操作系统</tag>
+      
+      <tag>备忘录</tag>
       
     </tags>
     
@@ -335,17 +335,6 @@
   
   
   <entry>
-    <title>Destinyの网址导航</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"> <title>Destinyの网址导航</title> <style>.box {  border-radius: 6px;    display: flex;    flex-flow: row wrap;    justify-content:center;    align-content:center;  margin: 2% 0;}.btn {  background: #e2f1ff;  border-radius: 6px;  font-family: Arial;  color: black;  font-size: 18px;  padding: 10px 20px 10px 20px;  text-decoration: none;  float: none;  cursor: pointer;  margin: 6px 6px 6px 6px;}.btn:hover {  background: #5fbfff;  text-decoration: none;}.boxsearch{  display:flex;  width:auto;    height:40px;    border:2px solid #5fbfff;    margin: 2% 20% 2% 20%;}.input{    flex: 1 0 auto;        float:left;        width:auto;        height:36px;        outline:none;        border:none;}.btnsearch{  flex: 0 0 auto;    float:right;    width:50px;    height:36px;    color:black;    background:#e2f1ff;    border:none;    outline:none;  cursor: pointer;}.btnsearch:hover {  background: #5fbfff;  text-decoration: none;}<p></style></p></head><body><div class="boxsearch">    <input type="text" class="input" placeholder="输入您要搜索的文本">    <button class="btnsearch">搜索</button></div><center><h2>资源站</h2></center><div class="box">  <a href="https://www.linovelib.com/" class="btn">哔哩轻小说(PC)</a>  <a href="https://www.bilinovel.com/" class="btn">哔哩轻小说(Moblie)</a>  <a href="https://www.cycity.pro/" class="btn">次元城动漫</a>  <a href="http://gbtgame.ysepan.com/" class="btn">GBT游戏资源站</a>  <a href="https://www.bilfun.cc/" class="btn">萌番影视资源站</a>  <a href="https://winmoes.com/" class="btn">枫の主题站</a></div><center><h2>实用工具</h2></center><div class="box">  <a href="https://mathdf.com/int/cn" class="btn">积分分步计算器</a>  <a href="https://jfc120.com/" class="btn">在线数学解题工具</a>  <a href="https://imgse.com/" class="btn">路过™免费图床</a>  <a href="https://www.jyshare.com/" class="btn">菜鸟工具</a>  <a href="https://steamdb.info/" class="btn">SteamDB</a>  <a href="https://tool.lu/" class="btn">在线工具网</a>  <a href="https://chatgpt.com/" class="btn">Chatgpt</a>  <a href="https://yiyan.baidu.com/" class="btn">文心一言</a></div><center><h2>学习</h2></center><div class="box">  <a href="https://developer.mozilla.org/zh-CN/" class="btn">MDN 开放平台</a>  <a href="https://www.w3school.com.cn/" class="btn">W3S Web教程</a>  <a href="https://www.geogebra.org/?lang=zh-CN" class="btn">GeoGebra</a>  <a href="https://github.com/" class="btn">Github</a>  <a href="https://www.runoob.com" class="btn">菜鸟教程</a>  <a href="https://www.nowcoder.com/" class="btn">牛客网</a>  <a href="https://leetcode.cn/" class="btn">Leetcode</a>  <a href="https://www.acwing.com/" class="btn">AcWing</a></div></body></html>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>about</title>
     <link href="/"/>
     <url>/</url>
@@ -362,6 +351,17 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<p><center> <big><b>您的评论务必遵守如下及中国或您所在国家的一切相关法律法规：</b></big></center><center><big><b>《中华人民共和国网络安全法》</b></big></center><center><big><b>《网络信息内容生态治理规定》</b></big></center><center><big><b>《互联网跟帖评论服务管理规定》</b></big></center></p><p><center>善语结善缘 恶语伤人心</center><center>本站鼓励用户表达个人观点的同时尊重他人观点，不引战、人身攻击、不诋毁、辱骂他人。</center><center>本站鼓励大家基于真实的信息表达观点，杜绝抄袭捏造，不造谣传谣，不有意误导和歪曲事实。</center><center>本站鼓励用户避免制造分裂和对立，交朋友而不是制造敌人。</center></p><p><center>感谢您的配合</center></p>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Destinyの网址导航</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"> <title>Destinyの网址导航</title> <style>.box {  border-radius: 6px;    display: flex;    flex-flow: row wrap;    justify-content:center;    align-content:center;  margin: 2% 0;}.btn {  background: #e2f1ff;  border-radius: 6px;  font-family: Arial;  color: black;  font-size: 18px;  padding: 10px 20px 10px 20px;  text-decoration: none;  float: none;  cursor: pointer;  margin: 6px 6px 6px 6px;}.btn:hover {  background: #5fbfff;  text-decoration: none;}.boxsearch{  display:flex;  width:auto;    height:40px;    border:2px solid #5fbfff;    margin: 2% 20% 2% 20%;}.input{    flex: 1 0 auto;        float:left;        width:auto;        height:36px;        outline:none;        border:none;}.btnsearch{  flex: 0 0 auto;    float:right;    width:50px;    height:36px;    color:black;    background:#e2f1ff;    border:none;    outline:none;  cursor: pointer;}.btnsearch:hover {  background: #5fbfff;  text-decoration: none;}<p></style></p></head><body><div class="boxsearch">    <input type="text" class="input" placeholder="输入您要搜索的文本">    <button class="btnsearch">搜索</button></div><center><h2>资源站</h2></center><div class="box">  <a href="https://www.linovelib.com/" class="btn">哔哩轻小说(PC)</a>  <a href="https://www.bilinovel.com/" class="btn">哔哩轻小说(Moblie)</a>  <a href="https://www.cycity.pro/" class="btn">次元城动漫</a>  <a href="http://gbtgame.ysepan.com/" class="btn">GBT游戏资源站</a>  <a href="https://www.bilfun.cc/" class="btn">萌番影视资源站</a>  <a href="https://winmoes.com/" class="btn">枫の主题站</a></div><center><h2>实用工具</h2></center><div class="box">  <a href="https://mathdf.com/int/cn" class="btn">积分分步计算器</a>  <a href="https://jfc120.com/" class="btn">在线数学解题工具</a>  <a href="https://imgse.com/" class="btn">路过™免费图床</a>  <a href="https://www.jyshare.com/" class="btn">菜鸟工具</a>  <a href="https://steamdb.info/" class="btn">SteamDB</a>  <a href="https://tool.lu/" class="btn">在线工具网</a>  <a href="https://chatgpt.com/" class="btn">Chatgpt</a>  <a href="https://yiyan.baidu.com/" class="btn">文心一言</a></div><center><h2>学习</h2></center><div class="box">  <a href="https://developer.mozilla.org/zh-CN/" class="btn">MDN 开放平台</a>  <a href="https://www.w3school.com.cn/" class="btn">W3S Web教程</a>  <a href="https://www.geogebra.org/?lang=zh-CN" class="btn">GeoGebra</a>  <a href="https://github.com/" class="btn">Github</a>  <a href="https://www.runoob.com" class="btn">菜鸟教程</a>  <a href="https://www.nowcoder.com/" class="btn">牛客网</a>  <a href="https://leetcode.cn/" class="btn">Leetcode</a>  <a href="https://www.acwing.com/" class="btn">AcWing</a></div></body></html>]]></content>
     
   </entry>
   
